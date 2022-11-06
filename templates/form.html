@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            position: fixed;
+            top: 30%;
+            left: 45%;
+            margin-top: -50px;
+            margin-left: -100px;
+            background-color: #ffffff;
+        }
+
+        input {
+            background-color: #f5f5f5 !important;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+
+</head>
+
+<body>
+    <form action="/qrcode/postData" method="post">
+        <h1 align="center">Register</h1>
+        <br/>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form1Example1">Name</label>
+            <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name">
+        </div>
+        
+
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form1Example1">Reg No.</label>
+            <input class="form-control" name="regno" id="regno" type="text"
+                placeholder="Enter your registration number">
+        </div>
+        <br />
+        <div class="text-center">
+            <p>View registered students? <a href="/view">View</a></p>
+        <button class="btn btn-primary btn-block">Submit</button>
+    </form>
+    <br />
+    <br />
+</body>
+
+</html>
